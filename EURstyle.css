@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: MuseoSans,Arial,Helvetica,Verdana,sans-serif;
+  font-family: MuseoSans,Arial,Helvetica,Verdana,sans-serif !important;
   font-weight: 500;
   height: 100%;
 }
@@ -18,6 +18,12 @@ body {
   padding-bottom: 80px;
 }
 
+.navbar-brand{
+  font-weight: 900;
+}
+.navbar-link-item{
+  font-weight: 500;
+}
 .background{
   left: 0px;
   right: 0px;
@@ -264,7 +270,7 @@ svg {
     margin-top: 20px;
     margin-left: -40px;
     margin-right: -40px;
-
+position: relative;
 }
 
 .box1 {
@@ -292,12 +298,13 @@ svg {
     height: 200px;
     margin-right: 10px;
     margin-left: 10px;
-    display: inline;
+
     }
 
 h2 {
-    display: block;
-    color: #fff;
+    display: inline-block;
+    color: #fff !important;
+    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif !important;
     font-weight: 900;
     font-size: 22px;
 }
@@ -309,7 +316,7 @@ h2 {
     margin-left: 5px;
     font-size: 24px;
     font-weight: 900;
-    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif;
+    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif !important;
     -moz-text-size-adjust: 100%;
     line-height: 28px;
     text-rendering: optimizeLegibility;
@@ -317,7 +324,6 @@ h2 {
 }
 
 #chevron-list {
-
     display: inline-block;
     height: 20px;
     hyphens: manual;
