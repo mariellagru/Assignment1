@@ -33,25 +33,25 @@ body {
 /* Header*/
 
 .header{
-  margin-left: auto;
+  margin-left: 120px;
   margin-right: auto;
-  margin-top:300px;
+  margin-top: 0px;
+  position: relative;
+  bottom: 490px;
 }
 .header-body{
   display: block;
-  background-color: #002328;
-  opacity: 0.6;
+background-color: rgba(0, 35, 40, 0.6);
   color: white;
-  padding: 10px;
-  display: inline-flex;
-  lign-self: flex-end;
+  align-self: flex-end;
+  box-sizing: inherit;
   height:164.96px;
   width: 563.28px;
   padding-bottom: 7px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top:7px;
-  position:relative;
+  position: relative;
 }
 
 .header-title{
@@ -59,15 +59,16 @@ body {
   font-size: 44px;
   font-weight: bold;
   margin-bottom: 0;
-  line-height: 22.05px;
+  line-height: 1;
   text-rendering: optimizelegibility;
 }
 
 .header-text{
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 24px;
+text-align: left;
+box-sizing: border-box;
+font-size: 24px;
 font-weight: 300;
+margin-top: 10px;
 line-height: 34px;
 text-rendering: optimizelegibility;
 }
@@ -77,11 +78,17 @@ text-rendering: optimizelegibility;
 .grid{
    margin-right: auto;
    margin-left: auto;
-   margin-top: 250px;
+  position: relative;
+  bottom: 300px;
+   font-weight: 10px;
+   flex-direction: column;
   }
 
 .picture-party{
   width: 18rem;
+  padding: 0;
+  margin: 0;
+  
 }
 .card-ranking{
   background-color: #002328;
@@ -199,7 +206,7 @@ text-rendering: optimizelegibility;
 
 .footer-nav {
   display: inline-flex;
-  lign-self: flex-end;
+  align-self: flex-end;
 }
 
 /* ANBI, Cookies, Disclaimer, Privacy Statement */
@@ -285,6 +292,7 @@ svg {
     height: 200px;
     margin-right: 10px;
     margin-left: 10px;
+    display: inline;
     }
 
 h2 {
@@ -316,7 +324,7 @@ h2 {
     margin-right: 5px;
     font-size: 24px;
     font-weight: 500;
-    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif
+    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif;
     -moz-text-size-adjust: 100%;
     line-height: 22px;
     text-rendering: optimizeLegibility;
