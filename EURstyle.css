@@ -3,8 +3,16 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'museosans';
+  src: url('museosans500.otf');
+}
+
 body {
-  font-family: MuseoSans,Arial,Helvetica,Verdana,sans-serif !important;
+  font-family: 'museosans';
+}
+
+body {
   font-weight: 500;
   height: 100%;
 }
@@ -19,7 +27,9 @@ body {
 }
 
 .navbar-brand{
-  font-weight: 900;
+  font-weight: 1000;
+  padding-left: 4px;
+  font-size: 0px;
 }
 .navbar-link-item{
   font-weight: 500;
@@ -39,7 +49,7 @@ body {
 /* Header*/
 
 .header{
-  margin-left: 120px;
+  margin-left: 215.5px;
   margin-right: auto;
   margin-top: 0px;
   position: relative;
@@ -52,7 +62,7 @@ background-color: rgba(0, 35, 40, 0.6);
   align-self: flex-end;
   box-sizing: inherit;
   height:164.96px;
-  width: 563.28px;
+  width: 530px;
   padding-bottom: 7px;
   padding-left: 15px;
   padding-right: 15px;
@@ -85,20 +95,26 @@ text-rendering: optimizelegibility;
    margin-right: auto;
    margin-left: auto;
   position: relative;
-  bottom: 300px;
+  bottom: 10px;
    font-weight: 10px;
    flex-direction: column;
+   top: -470px;
   }
 
 .picture-party{
   width: 18rem;
   padding: 0;
   margin: 0;
-  
+
 }
 .card-ranking{
   background-color: #002328;
   color: #fff;
+  height: 315px;
+  padding: 150px 0px 0px 0px;
+  margin-left: 25px;
+  margin-right: -10px;
+  width: 280px;
 }
 
 .picture-harbour{
@@ -108,24 +124,34 @@ text-rendering: optimizelegibility;
 .card-vital{
   background-color: #002328;
   color: #fff;
+  height: 315px;
+  padding: 125px 0px 0px 0px;
 }
 
 .card-run{
   background-color: #002328;
   color: #fff;
+  height: 315px;
+  padding: 150px 0px 0px 0px;
 }
 .picture-run{
   width: 18rem;
+  margin-left: 30px;
 }
 
 .card-challenge{
   background-color: #002328;
   color: #fff;
+  height: 315px;
+  padding: 150px 0px 0px 0px;
 }
 .picture-man{
   width: 18rem;
 }
 
+.navbar-collapse {
+  padding-bottom: 10px;
+}
 /* Position Grid */
 
 .grid {
@@ -137,13 +163,14 @@ text-rendering: optimizelegibility;
 }
 .box {
   border-radius: 0px;
-  grid-gap: 0%;
+  grid-gap: 10%;
 }
 .a{
   grid-area: 1 / 1 / span 1 /  span 1;
 }
 .b{
   grid-area: 1 / 2 / span 1 /  span 1;
+  
 }
 .c{
   grid-area: 1 / 4 / span 1 /  span 1;
@@ -169,15 +196,24 @@ text-rendering: optimizelegibility;
 .button {
   background-color: #0c8066;
   color: #eee;
+  margin-left: 24px;
+  padding: 6px 15px;
 }
 /* the right font style is still missing */
+
+#buttonid {
+  margin-left: 0px;
+}
+
 .card-title{
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: bold;
+  padding: 0px 24px;
 }
 
 .card-text{
- font-size: 2.6rem;
+ font-size: 17px;
+ padding: 0px 24px;
 }
 
 /* Footer */
@@ -192,6 +228,7 @@ text-rendering: optimizelegibility;
    background-color: #0c8066;
    color: white;
    text-align: center;
+  
 }
 .icon {
   color: white;
@@ -236,9 +273,13 @@ svg {
   height: 90px;
   padding: 0;
   background: white;
+  font-size: 21px;
+  font-weight: 900px;
 }
 #second-nav {
   padding: 0;
+  font-size: 21px;
+  font-weight: 900px;
 }
 .navbar-link-item {
   padding: 0 !important;
@@ -247,7 +288,8 @@ svg {
   font-weight: 500;
 }
 #onderwijs {
-  margin-left: 0;
+  margin-right: 30px;
+  font-size: 18px;
 }
 .margin-left {
   margin-left: auto;
@@ -267,27 +309,60 @@ svg {
 
 }
 .box {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: -40px;
-    margin-right: -40px;
+    margin-right: 0px;
     max-width: width;
   position: relative;
+  height: 100%;
 }
+
+.boxaa {
+  margin-top: 0px;
+  margin-left: -23px;
+  margin-right: -23px;
+  max-width: width;
+position: relative;
+bottom: 10px;
+top: -400px;
+}
+
+.boxa {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: width;
+position: relative;
+
+}
+
+.back {
+  width: 100%;
+}
+
+.boxb {
+  margin-top: 0px;
+  margin-left: -10px;
+  margin-right: 0px;
+  max-width: width;
+position: relative;
+}
+
 
 .box1 {
     padding: 15px 20px;
     margin-right: 10px;
     float:left;
     background-color: #0c8066;
-    min-width: 368px;
-    height: 200px;
+    width: 367.6px;
+    height: 230px;
     }
 .box2 {
     padding: 15px 20px;
     float:left;
     background-color:#0c8066;
-    min-width: 368px;
-    height: 200px;
+    width: 367.6px;
+    height: 230px;
     margin-right: 10px;
     margin-left: 10px;
     }
@@ -295,8 +370,8 @@ svg {
     padding: 15px 20px;
     float:left;
     background-color:#0c8066;
-    min-width: 368px;
-    height: 200px;
+    width: 367.6px;
+    height: 230px;
     margin-right: 10px;
     margin-left: 10px;
     }
@@ -304,7 +379,7 @@ svg {
 h2 {
     display: inline-block;
     color: #fff !important;
-    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif !important;
+    font-family: 'museosans';
     font-weight: 900 !important;
     font-size: 22px !important;
 }
@@ -316,7 +391,7 @@ h2 {
     margin-left: 5px;
     font-size: 24px;
     font-weight: 900;
-    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif !important;
+    font-family: 'museosans';
     -moz-text-size-adjust: 100%;
     line-height: 28px;
     text-rendering: optimizeLegibility;
@@ -330,7 +405,7 @@ h2 {
     margin-right: 5px;
     font-size: 24px;
     font-weight: 500;
-    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif;
+    font-family: 'museosans';
     -moz-text-size-adjust: 100%;
     line-height: 22px;
     text-rendering: optimizeLegibility;
@@ -355,7 +430,16 @@ h2 {
 
 #list-text {
     color:rgb(255, 255, 255);
-    font-family: MuseoSans, Arial, Helvetica, Verdana, sans-serif;
+    font-family: 'museosans';
+    font-size: 17px;
+    font-weight: 550;
+    line-height: 22px;
+    text-align: left;
+}
+
+#list-textM {
+    color:rgb(255, 255, 255);
+    font-family: 'museosans';
     font-size: 17px;
     font-weight: 550;
     line-height: 22px;
