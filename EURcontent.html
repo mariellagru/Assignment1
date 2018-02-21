@@ -2,10 +2,26 @@
 <hmtl>
 
   <head>
-    <link rel="stylesheet" href="EURstyle.css" />
+    <link rel="stylesheet" href="EURstyle (4).css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#first-nav").hover(function(){
+        alert("Welcome to the Erasmus University website!");
+    },
+    function(){
+        alert("If you have any further questions we are happy to hear from you personally!");
+    });
+});
+$(document).ready(function(){
+    $("#list-textM").dblclick(function(){
+        $(this).hide();
+    });
+});
+</script>
   </head>
 
   <body>
@@ -32,22 +48,22 @@
                                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar-link-item" href="# ">Research</a>
+                <a class="nav-link navbar-link-item" id="onderwijs" href="# ">Research</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link navbar-link-item" href="# ">About EUR</a>
+                <a class="nav-link navbar-link-item" id="onderwijs" href="# ">About EUR</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link navbar-link-item" href="# ">Working at Erasmus University</a>
+                <a class="nav-link navbar-link-item" id="onderwijs" href="# ">Working at Erasmus University</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link navbar-link-item" href="# ">Campus</a>
+                <a class="nav-link navbar-link-item" id="onderwijs" href="# ">Campus</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link navbar-link-item" href="# ">News</a>
+                <a class="nav-link navbar-link-item" id="onderwijs" href="# ">News</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link navbar-link-item" href="# ">Contact</a>
+                <a class="nav-link navbar-link-item" id="onderwijs" href="# ">Contact</a>
               </li>
             </ul>
             <ul class="navbar-nav margin-left">
@@ -66,13 +82,13 @@
       </div>
 
     <!--Background-->
-    <span> 
-      <img src="erasmus.jpg" alt= "Here should be a picture of erasmus"> 
+    <span>
+      <img src="https://drive.google.com/open?id=1jfqAI5QIgrjybNoOXjeNk9yzBOR-EGy9" class="back" alt= "Here should be a picture of erasmus">
     </span>
 
     <!-- Header -->
   </header>
-    <div class="header" style="width: 39rem">
+    <div class="header">
       <div class="header-body">
         <h5 class="header-title">Erasmus University Rotterdam</h5>
         <p class="header-text">Make it happen.</p>
@@ -84,64 +100,73 @@
     <div class="boxA">
     <div class="picture-party" style="width: 18rem">
       <div class="picture-body-party">
-        <img src="party.jpg" alt="Party">
+        <img src="https://drive.google.com/open?id=15xUGJ-sRnrMZk8nHqarB21K5mwnfK4jB" alt="Party">
       </div>
     </div>
     </div>
     <div class="box b">
-    <div class="card-ranking" style="width: 18rem;">
+    <div class="card-ranking">
       <div class="card-body-ranking">
         <h5 class="card-title">EUR in rankings</h5>
         <p class="card-text">Erasmus University Rotterdam is a top-100 university</p>
-        <a href="#" class="button">More about rankings</a>
+        
+        <a href="#" class="button">
+            <span id="buttonid" aria-hidden="true" focusable="false">›</span>
+          More about rankings</a>
       </div>
     </div>
     </div>
-    <div class="box c">
-    <div class="picture-harbour" style="width: 18rem">
+    <div class="boxa c">
+    <div class="picture-harbour" style="width: 20rem">
       <div class="picture-body-harbour">
-        <img src="harbour.jpg" alt="Harbour">
+        <img src="https://drive.google.com/open?id=1foyV8-SNxllDtmNueyux4kF8HPz21dk-" alt="Harbour">
       </div>
     </div>
     </div>
-    <div class="box d">
+    <div class="boxb d">
     <div class="card-vital" style="width: 18rem;">
       <div class="card-body-vital">
         <h5 class="card-title">Vital Cities and Citizens</h5>
         <p class="card-text">Contribute to the quality of city life</p>
-        <a href="#" class="button">Read all about this research theme</a>
+        <a href="#" class="button">
+            <span id="buttonid" aria-hidden="true" focusable="false">›</span>
+            Read more</a>
       </div>
     </div>
     </div>
-    <div class="box e">
+    <div class="boxa e">
     <div class="card-run" style="width: 18rem;">
       <div class="card-body-run">
         <h5 class="card-title">Erasmus Charity Run</h5>
         <p class="card-text">Register now</p>
-        <a href="#" class="button">More information</a>
+        <a href="#" class="button">
+            <span id="buttonid" aria-hidden="true" focusable="false">›</span>
+            More information</a>
       </div>
     </div>
     </div>
     <div class="box f">
     <div class="picture-run" style="width: 18rem">
       <div class="picture-body-run">
-        <img src="run.jpg" alt="Run">
+        <img src="https://drive.google.com/open?id=1LC0yQ4Pn0G8j0zLxaFTVSm8gC-I6S9gr" alt="Run">
       </div>
     </div>
     </div>
-    <div class="box g">
+    <div class="boxa g">
     <div class="card-challenge" style="width: 18rem;">
       <div class="card-body-challenge">
         <h5 class="card-title">Challenge accepted</h5>
         <p class="card-text">Tackling the grand challenges of the 21st century</p>
-        <a href="#" class="button">Will you join us?</a>
+        <a href="#" class="button">
+            <span id="buttonid" aria-hidden="true" focusable="false">›</span>
+            Will you join us?</a>
       </div>
     </div>
     </div>
-    <div class="box h">
+    <div class="boxb h">
     <div class="picture-man" style="width: 18rem">
       <div class="picture-body-man">
-        <img src="man.jpg" alt="Man">
+        <img src="https://drive.google.com/open?id=1XLynMehdngCJJp3hkEXO4ylQpwo3sDi9" alt="Man">
       </div>
     </div>
     </div>
@@ -149,7 +174,7 @@
     <div class="container">
 
                  <!-- boxes -->
-              <div class="box">
+              <div class="boxaa">
                 <!-- box 1 -->
                 <div class="box1">
                   <h2>
@@ -163,7 +188,7 @@
                     </li>
                     <li class="list">
                         <span id="chevron-list" aria-hidden="true" focusable="false">›</span>
-                        <span id="list-text">Master programmes</span>
+                        <span id="list-textM">Master programmes</span>
                     </li>
                     <li class="list">
                         <span id="chevron-list" aria-hidden="true" focusable="false">›</span>
@@ -276,8 +301,6 @@
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <script src="assignment.js"></script>
 </hmtl>
